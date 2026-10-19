@@ -4,7 +4,7 @@ const dataArtis = {
     "BTS": {
         nama: "BTS",
         namaLain: "Bangtan Sonyeondan / Beyond the Scene",
-        gambar: "Gambar/BTS.jpg",
+        gambar: "GAMBAR/BTS.jpg",
         debut: "2013",
         agensi: "BIGHIT MUSIC",
         anggota: "RM, Jin, SUGA, j-hope, Jimin, V, Jung Kook",
@@ -21,7 +21,7 @@ const dataArtis = {
     "TXT": {
         nama: "TOMORROW X TOGETHER (TXT)",
         namaLain: "Tomorrow X Together",
-        gambar: "Gambar/TXT.jpg",
+        gambar: "GAMBAR/TXT.jpg",
         debut: "2019",
         agensi: "BIGHIT MUSIC",
         anggota: "Soobin, Yeonjun, Beomgyu, Taehyun, Huening Kai",
@@ -38,7 +38,7 @@ const dataArtis = {
     "ENHYPEN": {
         nama: "ENHYPEN",
         namaLain: "Connect, Discover, Grow",
-        gambar: "Gambar/ENHYPEN.jpg",
+        gambar: "GAMBAR/ENHYPEN.jpg",
         debut: "2020",
         agensi: "BELIFT LAB",
         anggota: "Jungwon, Jay, Jake, Sunghoon, Sunoo, Ni-ki",
@@ -55,7 +55,7 @@ const dataArtis = {
     "SEVENTEEN": {
         nama: "SEVENTEEN",
         namaLain: "SVT",
-        gambar: "Gambar/SEVENTEEN.jpg",
+        gambar: "GAMBAR/SEVENTEEN.jpg",
         debut: "2015",
         agensi: "PLEDIS Entertainment",
         anggota: "S.Coups, Jeonghan, Joshua, Jun, Hoshi, Wonwoo, Woozi, DK, Mingyu, The8, Seungkwan, Vernon, Dino",
@@ -72,7 +72,7 @@ const dataArtis = {
     "LE SSERAFIM": {
         nama: "LE SSERAFIM",
         namaLain: "I'm Fearless",
-        gambar: "Gambar/LE SSERAFIM.jpg",
+        gambar: "GAMBAR/LE SSERAFIM.jpg",
         debut: "2022",
         agensi: "SOURCE MUSIC",
         anggota: "Kim Chaewon, Sakura, Huh Yunjin, Kazuha, Hong Eunchae",
@@ -89,7 +89,7 @@ const dataArtis = {
     "ILLIT": {
         nama: "ILLIT",
         namaLain: "I Will Be It",
-        gambar: "Gambar/ILLIT.jpg",
+        gambar: "GAMBAR/ILLIT.jpg",
         debut: "2024",
         agensi: "BELIFT LAB",
         anggota: "Yunah, Minju, Moka, Wonhee, Iroha",
@@ -106,7 +106,7 @@ const dataArtis = {
     "CORTIS": {
         nama: "CORTIS",
         namaLain: "Color Outside The Lines",
-        gambar: "Gambar/CORTIS.jpg",
+        gambar: "GAMBAR/CORTIS.jpg",
         debut: "2025",
         agensi: "BIGHIT MUSIC",
         anggota: "Martin, James, Juhoon, Seonghyeon, Keonho",
@@ -123,7 +123,7 @@ const dataArtis = {
     "NEWJEANS": {
         nama: "NewJeans",
         namaLain: "NJZ",
-        gambar: "Gambar/NEWJEANS.jpg",
+        gambar: "GAMBAR/NEWJEANS.jpg",
         debut: "2022",
         agensi: "ADOR",
         anggota: "Minji, Hanni, Danielle, Haerin, Hyein",
@@ -140,7 +140,7 @@ const dataArtis = {
     "LEE HYUN": {
         nama: "Lee Hyun",
         namaLain: "이현",
-        gambar: "Gambar/LEE HYUN.jpg",
+        gambar: "GAMBAR/LEE HYUN.jpg",
         debut: "2007",
         agensi: "BIGHIT MUSIC",
         anggota: "Solois",
@@ -157,7 +157,7 @@ const dataArtis = {
     "BOYNEXTDOOR": {
         nama: "BOYNEXTDOOR",
         namaLain: "BND",
-        gambar: "Gambar/BOYNEXTDOOR.jpg",
+        gambar: "GAMBAR/BOYNEXTDOOR.jpg",
         debut: "2023",
         agensi: "KOZ ENTERTAINMENT",
         anggota: "Sungho, Riwoo, Jaehyun, Taesan, Leehan, Woonhak",
@@ -174,7 +174,7 @@ const dataArtis = {
     "&TEAM": {
         nama: "&TEAM",
         namaLain: "Enteam",
-        gambar: "Gambar/&TEAM.jpg",
+        gambar: "GAMBAR/&TEAM.jpg",
         debut: "2022",
         agensi: "HYBE LABELS JAPAN",
         anggota: "EJ, Fuma, K, Nicholas, Yuma, Jo, Harua, Taki, Maki",
@@ -191,7 +191,7 @@ const dataArtis = {
     "TWS": {
         nama: "TWS",
         namaLain: "Twenty Four Seven With Us",
-        gambar: "Gambar/TWS.jpg",
+        gambar: "GAMBAR/TWS.jpg",
         debut: "2024",
         agensi: "PLEDIS ENTERTAINMENT",
         anggota: "Shinyu, Dohoon, Youngjae, Hanjin, Jihoon, Kyungmin",
