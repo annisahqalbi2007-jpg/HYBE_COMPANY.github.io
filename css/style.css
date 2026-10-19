@@ -1,0 +1,474 @@
+/* 1. VARIABEL WARNA UTAMA WEBSITE Digunakan agar warna mudah diubah dan konsisten.*/
+:root {
+    --gold: #d6b66d;
+    --black: #080808;
+    --dark: #111111;
+    --gray: #a5a5a5;
+}
+
+/* 2. PENGATURAN DASAR WEBSITE Mengatur jenis huruf, warna latar, dan margin.*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--black);
+    color: #ffffff;
+    margin: 0;
+}
+
+/* 3. NAVBAR / MENU NAVIGASI Mengatur jarak dan garis bawah navbar.*/
+.navbar {
+    padding: 18px 0;
+    border-bottom: 1px solid #292929;
+}
+
+/* Mengatur jarak antarhuruf pada logo website */
+.navbar-brand {
+    letter-spacing: 1px;
+}
+
+/* Memberikan warna emas pada tanda titik logo */
+.navbar-brand span {
+    color: var(--gold);
+}
+
+/* Mengatur jarak dan animasi warna pada menu navigasi */
+.nav-link {
+    margin-left: 12px;
+    transition: color 0.3s;
+}
+
+/* Mengubah warna menu saat diarahkan atau sedang aktif */
+.nav-link:hover,
+.nav-link.active {
+    color: var(--gold) !important;
+}
+
+/* 4. HERO SECTION BERANDA Bagian utama beranda dengan gambar latar gedung HYBE.*/
+.hero {
+    min-height: 600px;
+    padding: 100px 6%;
+
+    /* Mengatur isi hero agar tersusun vertikal */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* Memberikan lapisan gelap di atas gambar latar */
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.88),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("../Gambar/Gedung HYBE.jpg");
+
+    /* Mengatur gambar agar memenuhi area hero */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+}
+
+/* Mengatur ukuran, ketebalan, dan jarak judul hero */
+.hero h1 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin: 15px 0;
+}
+
+/* Memberikan warna emas pada teks tertentu di judul hero */
+.hero h1 span {
+    color: var(--gold);
+}
+
+/* Mengatur warna dan lebar teks penjelasan hero */
+.hero-text {
+    color: #c2c2c2;
+    max-width: 600px;
+    line-height: 1.8;
+}
+
+/* 5. WARNA TEKS EMAS Digunakan pada label, tautan, dan teks khusus.*/
+.text-gold {
+    color: var(--gold) !important;
+    letter-spacing: 1px;
+}
+
+/* 6. TOMBOL UTAMA BERWARNA EMAS Mengatur tampilan tombol dan efek hover.*/
+.btn-gold {
+    background-color: var(--gold);
+    color: #111111;
+    border: 1px solid var(--gold);
+    padding: 11px 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Mengubah tampilan tombol saat diarahkan mouse */
+.btn-gold:hover {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #111111;
+}
+
+/* 7. TOMBOL OUTLINE EMAS Tombol dengan latar transparan dan garis emas.*/
+.btn-outline-gold {
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    padding: 11px 25px;
+}
+
+/* Memberikan latar emas saat tombol diarahkan mouse */
+.btn-outline-gold:hover {
+    background-color: var(--gold);
+    color: #111111;
+}
+
+/* 8. JUDUL SECTION Mengatur ketebalan dan jarak bawah judul.*/
+.section-title {
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+/* 9. KARTU INFORMASI DAN KARTU ARTIS Mengatur latar, garis tepi, sudut, dan transisi.*/
+.info-card,
+.artist-card {
+    background-color: var(--dark);
+    border: 1px solid #292929;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+/* Memberikan ruang di dalam kartu informasi */
+.info-card {
+    padding: 28px;
+}
+
+/* Mengatur warna judul kartu */
+.info-card h3,
+.info-card h4,
+.artist-card h3 {
+    color: var(--gold);
+    margin-bottom: 15px;
+}
+
+/* Mengatur warna dan jarak baris teks dalam kartu */
+.info-card p,
+.artist-card p {
+    color: var(--gray);
+    line-height: 1.8;
+}
+
+/* Mengangkat kartu sedikit dan mengubah garis saat hover */
+.info-card:hover,
+.artist-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--gold);
+}
+
+/* Mengatur ukuran gambar pada kartu artis */
+.artist-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+/* 10. BAGIAN HIGHLIGHT Memberikan latar gelap dan garis pembatas section.*/
+.highlight-section {
+    background-color: #101010;
+    border-top: 1px solid #242424;
+    border-bottom: 1px solid #242424;
+}
+
+/* Mengatur tampilan daftar informasi pada halaman detail */
+.detail-list {
+    color: #c6c6c6;
+    line-height: 2;
+    padding-left: 20px;
+}
+
+/* Membatasi lebar teks pada halaman Tentang */
+.about-text {
+    max-width: 720px;
+    line-height: 1.9;
+}
+
+/* 11. FOOTER / BAGIAN BAWAH WEBSITE Mengatur warna latar, garis, dan teks footer.*/
+.footer {
+    background-color: #050505;
+    border-top: 1px solid #292929;
+    padding: 25px 15px;
+    color: #929292;
+    font-size: 14px;
+}
+
+/* Menghilangkan margin berlebih pada paragraf footer */
+.footer p {
+    margin: 5px 0;
+}
+
+/* 12. HALAMAN LOGIN Mengatur tinggi minimum halaman login.*/
+.login-page {
+    min-height: 100vh;
+}
+
+/* Menempatkan kartu login di tengah halaman */
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    min-height: 70vh;
+}
+
+/* Mengatur bentuk dan ukuran kotak login */
+.login-card {
+    background-color: #111111;
+    border: 1px solid #303030;
+    border-radius: 16px;
+    padding: 35px;
+    width: 100%;
+    max-width: 470px;
+}
+
+/* Mengatur warna label input pada form */
+.form-label {
+    color: #eeeeee;
+}
+
+/* Mengatur latar, teks, garis, dan ruang input */
+.form-control {
+    background-color: #1b1b1b;
+    color: #ffffff;
+    border: 1px solid #414141;
+    padding: 12px;
+}
+
+/* Memberikan garis emas saat input dipilih atau diklik */
+.form-control:focus {
+    background-color: #1b1b1b;
+    color: #ffffff;
+    border-color: var(--gold);
+    box-shadow: 0 0 0 0.2rem rgba(214, 182, 109, 0.15);
+}
+
+/* Mengatur warna teks petunjuk di dalam input */
+.form-control::placeholder {
+    color: #777777;
+}
+
+/* 13. RESPONSIVE UNTUK LAYAR HP KECIL Menyesuaikan hero, kartu login, dan navbar.*/
+@media (max-width: 576px) {
+    .hero {
+        min-height: 430px;
+        padding: 65px 0;
+    }
+
+    .hero h1 {
+        letter-spacing: 0;
+    }
+
+    .login-card {
+        padding: 25px 20px;
+    }
+
+    .nav-link {
+        margin-left: 0;
+    }
+}
+
+/* 14. GAMBAR HYBE Mengatur wadah gambar dan tinggi gambar.*/
+.hybe-image {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+    background-color: #101010;
+}
+
+/* Mengatur gambar agar memenuhi wadah */
+.hybe-logo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+    /* Membuat bagian atas dan bawah gambar memudar */
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        black 18%,
+        black 65%,
+        transparent 100%
+    );
+
+    mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        black 18%,
+        black 65%,
+        transparent 100%
+    );
+}
+
+/* Memastikan bagian highlight tidak menampilkan isi yang meluber */
+.highlight-section {
+    background-color: #101010;
+    overflow: hidden;
+}
+
+/* Mengurangi tinggi gambar HYBE pada layar HP */
+@media (max-width: 576px) {
+    .hybe-image {
+        height: 250px;
+    }
+}
+
+/* 15. ANIMASI GARIS KOTAK ALA HYBE Membuat beberapa kotak garis yang membesar dan mengecil.*/
+/* Wadah utama animasi */
+.hybe-animation {
+    position: relative;
+    min-height: 600px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+/* Tampilan dasar seluruh kotak animasi */
+.animated-box {
+    position: absolute;
+    width: 60%;
+    height: 72%;
+    border: 1px solid rgba(242, 242, 7, 0.733);
+    border-radius: 6px;
+
+/* Menjalankan animasi pembesaran dan pengecilan */
+    animation: boxMove 2s ease-in-out infinite alternate;
+}
+
+/* Kotak pertama: ukuran paling besar */
+.box-1 {
+    width: 60%;
+    height: 72%;
+    animation-delay: 0.5s;
+}
+
+/* Kotak kedua: ukuran lebih kecil */
+.box-2 {
+    width: 51%;
+    height: 59%;
+    animation-delay: 0.5s;
+}
+
+/* Kotak ketiga: ukuran sedang */
+.box-3 {
+    width: 40%;
+    height: 45%;
+    animation-delay: 1s;
+}
+
+/* Kotak keempat: ukuran paling kecil */
+.box-4 {
+    width: 27%;
+    height: 30%;
+    animation-delay: 1.5s;
+}
+
+/* Mengatur posisi teks agar berada di depan kotak */
+.animation-text {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mengatur tampilan judul di dalam animasi */
+.animation-text h1,
+.animation-text h2 {
+    color: #ffff00;
+    font-weight: 900;
+    font-size: clamp(24px, 5.5vw, 64px);
+    line-height: 0.95;
+    margin: 0;
+    letter-spacing: -2px;
+}
+
+/* 16. GERAKAN ANIMASI KOTAK @keyframes menentukan perubahan animasi dari awal sampai akhir. */
+@keyframes boxMove {
+    /* Posisi awal: kotak sedikit mengecil dan lebih transparan */
+    0% {
+        transform: scale(0.92);
+        opacity: 0.35;
+    }
+
+/* Posisi tengah: garis menjadi lebih terlihat */
+    50% {
+        opacity: 0.8;
+    }
+
+/* Posisi akhir: kotak membesar dan sedikit memudar */
+    100% {
+        transform: scale(1.08);
+        opacity: 0.45;
+    }
+}
+
+/* 17. RESPONSIVE ANIMASI UNTUK HP Menyesuaikan tinggi kotak dan ukuran judul di layar kecil. */
+@media (max-width: 768px) {
+    .hybe-animation {
+        min-height: 420px;
+    }
+
+    .animated-box {
+        width: 85%;
+    }
+
+    .box-2 {
+        width: 72%;
+    }
+
+    .box-3 {
+        width: 58%;
+    }
+
+    .box-4 {
+        width: 40%;
+    }
+
+    .animation-text h1,
+    .animation-text h2 {
+        letter-spacing: -1px;
+    }
+}
+
+/* 18. Perpindahan halaman cepat dan halus */
+body {
+    animation: halamanMasuk 0.15s ease-out;
+}
+
+@keyframes halamanMasuk {
+    from {
+        opacity: 0.8;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Transisi warna menu */
+.navbar .nav-link {
+    transition: color 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #f5c451 !important;
+}
