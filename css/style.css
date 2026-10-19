@@ -59,7 +59,7 @@ body {
             rgba(0, 0, 0, 0.88),
             rgba(0, 0, 0, 0.45)
         ),
-        url("../Gambar/Gedung HYBE.jpg");
+        url("../GAMBAR/Gedung HYBE.jpg");
 
     /* Mengatur gambar agar memenuhi area hero */
     background-size: cover;
